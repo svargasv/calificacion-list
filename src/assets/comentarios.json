@@ -1,0 +1,23 @@
+[{
+  "id": 1,
+  "comentario": "Soy una prueba",
+  "descripcion":"Hola"
+
+}, {
+  "id": 2,
+  "comentario": "Soy un comentario",
+  "descripcion":"Hola"
+ 
+},
+{
+  "id": 3,
+  "comentario": "Netflix",
+  "descripcion":"Hola"
+ 
+},
+{
+  "id": 4,
+  "comentario": "Buena pelicula",
+  "descripcion":"Hola"
+  
+}]
