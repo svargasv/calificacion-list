@@ -21,7 +21,7 @@ const routes: Routes = [
   },
   {
     path:'create',
-    component:ComentarioCreateComponent,
+    component:CalificacionCreateComponent,
   }
   
   
