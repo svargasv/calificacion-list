@@ -1,0 +1,34 @@
+<form [formGroup]="calificacionForm" (ngSubmit)="createCalificacion(calificacionForm.value)">
+
+	<div class="form-group mx-sm-3 mb-2">
+		<label for="id">
+      Identificador
+    </label>
+		<input novalidate
+    id="id" type="number"
+    class="form-control"
+      formControlName="id"
+      placeholder="200">
+
+		<div class="alert alert-danger alert-dismissible fade show"
+			*ngIf="calificacionForm.get('id').hasError('required') && calificacionForm.get('id').touched">
+			Se necesita identificador
+		</div>
+	</div>
+
+	<div class="form-group  mx-sm-3 mb-2">
+		<label for="puntaje">
+      Puntaje
+    </label>
+		<input id="puntaje" type="number"
+     class="form-control"
+     formControlName="puntaje"
+     placeholder="5">
+
+		<div class="alert alert-danger alert-dismissible fade show"
+			*ngIf="calificacionForm.get('calificacion').hasError('required') && calificacionForm.get('calificacion').touched">
+			Se necesita puntaje
+		</div>
+	</div>
+	<button class="button mx-sm-3 mb-2" type="submit" [disabled]="calificacionForm.invalid">Create</button>
+</form>

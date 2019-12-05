@@ -3,13 +3,13 @@
 		<table class="table table-striped">
 			<thead class="thead-dark">
 				<tr>
-					<th>Comentario</th>
+					<th>Calificacion</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td></td>
-				<tr *ngFor="let e of comentarios">
+				<tr *ngFor="let e of calificacion">
 					<td style="cursor-pointer;">
 						<a class="figure-caption" (click)="onSelected(e.id)">{{e.id}}</a>
 
@@ -20,8 +20,8 @@
 	</div>
 	<div class="border row">
 		<div class="col">
-			<div *ngIf="selectedComentario">
-				<app-comentario-detail [comentarioDetail]="selectedComentario"> </app-comentario-detail>
+			<div *ngIf="selectedCalificaciones">
+				<app-calificacion-detail [calificacionDetail]="selectedCalificaciones"> </app-calificacion-detail>
 			</div>
 		</div>
 	</div>

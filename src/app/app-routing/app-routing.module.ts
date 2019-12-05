@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import {ComentarioDetailComponent} from '../comentario/comentario-detail/comentario-detail.component';
-import {ComentarioListComponent} from '../comentario/comentario-list/comentario-list.component';
-import {ComentarioCreateComponent} from '../comentario/comentario-create/comentario-create.component';
+import {CalificacionDetailComponent} from '../comentario/comentario-detail/calificacion-detail.component';
+import {CalificacionListComponent} from '../comentario/comentario-list/calificacion-list.component';
+import {CalificacionCreateComponent} from '../comentario/comentario-create/calificacion-create.component';
 const routes: Routes = [
 
   {
-    path: 'comentarios',
+    path: 'calificaciones',
     children: [{
       path: 'list',
-      component: ComentarioListComponent
+      component: CalificacionListComponent
     },
     {
       path: ':id',
-      component: ComentarioDetailComponent,
+      component: CalificacionDetailComponent,
       outlet: 'detail'
     }
     ]
